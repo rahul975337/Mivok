@@ -16,16 +16,17 @@ import java.util.ArrayList;
  * {@link WordAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Word} objects.
  */
-public class WordAdapter extends ArrayAdapter<Word>  {
-//
+public class WordAdapter extends ArrayAdapter<Word> {
+    //
     private int mColorResourceId;
+
     /**
      * Create a new {@link WordAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param words is the list of {@link Word}s to be displayed.
+     * @param words   is the list of {@link Word}s to be displayed.
      */
-    public WordAdapter(Context context, ArrayList<Word> words,int colorResourceId) {
+    public WordAdapter(Context context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);
         mColorResourceId = colorResourceId;
     }
